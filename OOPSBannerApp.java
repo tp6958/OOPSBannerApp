@@ -1,16 +1,21 @@
-public class OOPSBannerApp {
+public public class OOPSBannerApp {
 
     public static void main(String[] args) {
-
-        // Line 1: Top caps of O, O, P and S
-        System.out.println(String.join(" ","   ****    ","   ****    ","**********  ","**********"));
-        System.out.println(String.join(" "," **     ** "," **     ** ","*********** ","**********"));
-        System.out.println(String.join(" ","**       **","**       **","**        **","**        "));
-        System.out.println(String.join(" ","**       **","**       **","**        **","**        "));
-        System.out.println(String.join(" ","**       **","**       **","**       ** ","**********"));
-        System.out.println(String.join(" ","**       **","**       **","**********  ","**********"));
-        System.out.println(String.join(" ","**       **","**       **","***         ","        **"));
-        System.out.println(String.join(" "," **     ** "," **     ** ","***         ","        **"));
-        System.out.println(String.join(" ","   ****    ","   ****    ","***         ","**********"));
+        String[] bannerLines = new String[] {
+        String.join("", "    *    " , "    *    " , " ***    "   , "    *** "),
+        String.join("", "  *   *  " , "  *   *  " , " *     *  "   , "  **      "),
+        String.join("", " *     * " , " *     * " , " *      * "   , "**        "),
+        String.join("", " *     * " , " *     * " , " *     *  "   , " **       "),
+        String.join("", " *     * " , " *     * " , " ***    "   , "   *    "),
+        String.join("", " *     * " , " *     * " , " *         "   , "      *  "),
+        String.join("", " *     * " , " *     * " , " *         "   , "       * "),
+        String.join("", "  *   *  " , "  *   *  " , " *         "   , "     *   "),
+        String.join("", "    *    " , "    *    " , " *         "   , "**     ")
+        };
+        for (String line : bannerLines) {
+            System.out.println(line);
+        }
     }
+} {
+    
 }
